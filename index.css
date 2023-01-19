@@ -1,0 +1,501 @@
+/* Page reset */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Gotham Pro';
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/* FONTS */
+
+/* Regular */
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('GothamPro.eot');
+    src: local('Gotham Pro'), local('GothamPro'),
+        url('./fonts/GothamPro.eot') format('embedded-opentype'),
+        url('./fonts/GothamPro.woff') format('woff'),
+        url('./fonts/GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Medium */
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('GothamPro-Medium.eot');
+    src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+        url('./fonts/GothamPro-Medium.eot') format('embedded-opentype'),
+        url('./fonts/GothamPro-Medium.woff') format('woff'),
+        url('./fonts/GothamPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* Black */
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('GothamPro-Black.eot');
+    src: local('Gotham Pro Black'), local('GothamPro-Black'),
+        url('./fonts/GothamPro-Black.eot') format('embedded-opentype'),
+        url('./fonts/GothamPro-Black.woff') format('woff'),
+        url('./fonts/GothamPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Color */
+
+:root {
+    --title-color: #6B5CDA;
+    --paragp-color: #464646;
+    --sub-title: #000000;
+    --number-color: #FEC901;
+}
+
+/* Container */
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Background */
+.contract {
+    background: rgba(171, 168, 218, 0.1);
+}
+
+/*contact_head */
+
+.contract_head_title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+
+.contact_head_text {
+    padding-top: 120px;
+    margin: 0 auto;
+    max-width: 967px;
+    margin-bottom: 63px;
+
+}
+
+
+.contract_head_parag {
+    color: var(--paragp-color);
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 15px;
+}
+
+/* Review block */
+.contract_review_block {
+    display: flex;
+}
+
+.contract_review_block img {
+    border-radius: 0px 29px 30px 0px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.contract_review_parag {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--paragp-color);
+    padding: 39px 39px 51px 0px;
+    border: 1px solid rgba(154, 105, 215, 0.3);
+    border-left: none;
+    border-radius: 0px 30px 30px 0px;
+    padding-left: 40px;
+}
+
+/* Service */
+.contract_services {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+}
+
+.contract_service_block {
+    max-width: 575px;
+
+}
+
+.margin-left {
+    margin-left: 41px;
+}
+
+.margin_right {
+    margin-right: 38px;
+}
+
+.margin-top {
+    margin-top: 36px;
+}
+
+.margin-botom {
+    margin-bottom: 56px;
+}
+
+.border-r {
+    border-right: 0.5px solid rgba(154, 105, 215, 0.3);
+}
+
+.border-l {
+    border-left: 0.5px solid rgba(154, 105, 215, 0.3);
+}
+
+.border-b {
+    border-bottom: 0.5px solid rgba(154, 105, 215, 0.3)
+}
+
+.border-t {
+    border-top: 0.5px solid rgba(154, 105, 215, 0.3);
+}
+
+.border-b-on {
+    border-top: 0.5px solid rgba(154, 105, 215, 0.3);
+    display: none;
+
+}
+
+.sevice_number {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 69px;
+    letter-spacing: 0.02em;
+    color: var(--number-color);
+    margin-right: 10px;
+}
+
+.service_name {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.01em;
+}
+
+.service_head {
+    display: flex;
+    align-items: flex-end;
+}
+
+.service_paragraph {
+    margin-top: 19px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--paragp-color);
+}
+
+/* Adaptiv */
+
+/* Contact_hed_text */
+@media(max-width:713px) {
+    .contact_head_text {
+        margin-bottom: 37px;
+    }
+}
+
+@media(max-width:436px) {
+    .contract_head_parag {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    .contract_head_title {
+        font-size: 30px;
+        line-height: 42px;
+        margin-bottom: 17px;
+    }
+
+    .contact_head_text {
+        margin-bottom: -33px;
+    }
+
+
+
+}
+
+
+
+.dn {
+    display: block;
+}
+
+/* Review */
+@media(max-width:1243px) {
+    .contract_review_parag {
+        padding: 26px 25px 21px 18px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .contract_review_block img {
+        width: 52%;
+    }
+
+    .dn {
+        display: none;
+    }
+}
+
+@media(max-width:1090px) {
+    .contract_review_parag {
+        font-size: 15px;
+        line-height: 18px;
+        padding: 16px 16px 9px 18px;
+    }
+
+}
+
+
+@media(max-width:981px) {
+    .contract_review_parag {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 16px 16px 9px 18px;
+    }
+}
+
+@media(max-width:916px) {
+    .contract_review_parag {
+        font-size: 13px;
+        line-height: 14px;
+    }
+}
+
+@media(max-width:912) {
+    .contract_review_parag {
+        font-size: 12px;
+        line-height: 13px;
+    }
+}
+
+
+
+
+@media(max-width:812px) {
+    .contract_review_block {
+        flex-direction: column;
+    }
+
+    .contract_review_block img {
+        width: 100%;
+        border-radius: 30px 29px 0px 0px;
+        margin-top: 30px;
+    }
+
+    .contract_review_parag {
+        border-radius: 0px 0px 30px 30px;
+        border-left: 1px solid rgba(154, 105, 215, 0.3);
+        border-top: none;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: center;
+
+    }
+
+}
+
+
+@media(max-width:460px) {
+    .contract_review_parag {
+        padding: 27px 23px 30px 20px;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: left;
+
+    }
+
+    .dn {
+        display: block;
+    }
+
+}
+
+/* Adaptiv services */
+
+@media(max-width:1260px) {
+    .contract_services {
+        padding-top: 35px;
+        flex-direction: column;
+
+    }
+
+    .contract_service_block {
+        margin: 0 auto;
+    }
+
+    .service_item {
+        margin: 0 auto;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        max-width: 575px;
+
+    }
+
+    .service_head {
+        display: block;
+    }
+
+    .service_item:nth-child(1) {
+        border-right: none;
+    }
+
+    .service_item:nth-child(3) {
+        border-bottom: 0.5px solid rgba(154, 105, 215, 0.3);
+    }
+
+    .service_item:nth-child(4) {
+        border-left: none;
+    }
+}
+.db{
+    display: block;
+}
+.m7{
+    margin-top: 0px
+}
+
+@media(max-width:460px) {
+    .contract_services {
+        margin-top: -11px;
+    }
+
+    .sevice_number {
+        font-size: 49px;
+        line-height: 63px;
+    }
+
+    .service_name {
+        font-size: 20px;
+    }
+
+    .service_paragraph {
+        margin-top: 12px;
+    }
+    .db{
+        display: none;
+    }
+    .service_item{
+        padding-top: 0;
+    }
+    .service_item:nth-child(2),
+    .service_item:nth-child(3),
+    .service_item:nth-child(4) {
+        padding-top: 16px;
+    }
+    .m7{
+        margin-top: 0px
+    }
+
+    .service_paragraph:nth-child(2){
+        margin-top: 7px;;
+
+    }
+
+}
